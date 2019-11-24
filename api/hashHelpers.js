@@ -3,6 +3,8 @@ const db = require('../data/dbConfig');
 module.exports = {
     getAllData,
     add,
+    login
+    
 }
 
 function getAllData() {
@@ -13,3 +15,9 @@ function add(data) {
     return db('login')
     .insert(data);
 }
+
+function login(params) {
+    return db('login')
+    .insert(params);
+}
+

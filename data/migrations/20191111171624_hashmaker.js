@@ -7,7 +7,6 @@ exports.up = function(knex, Promise) {
       tbl.string('username', 128).unique().notNullable();
       // creates a numeric field called budget which is required
       tbl.string('password', 128)
-      .unique()
       .notNullable();
     });
   };

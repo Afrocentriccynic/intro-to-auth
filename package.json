@@ -8,13 +8,13 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "knex": "^0.20.1",
+    "knex": "^0.20.2",
     "nodemon": "^1.19.4",
     "sqlite3": "^4.1.0"
   },
   "devDependencies": {},
   "scripts": {
-    "server": "node index.js",
+    "server": "nodemon index.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

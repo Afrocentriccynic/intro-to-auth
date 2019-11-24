@@ -33,9 +33,10 @@ const credentials = req.body;
 const hash = bcrypt.hashSync(credentials.password, 14)
     helper.add(credentials)
     .then(data => {
-        if (!data && !bcrypt.compareSync(hash, credentials.password) {
+        if (!data && !bcrypt.compareSync(hash, credentials.password)) {
             return res.status(401).json({message: "Failed to authenticate"})
-        });
+        }
+    });
 
 })
 

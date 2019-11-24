@@ -1,12 +1,13 @@
 const express = require('express');
 const helper = require('./api/hashHelpers');
 const bcrypt = require('bcryptjs');
+require('dotenv');
 
 const server = express();
 
 server.use(express.json());
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 //Some bcrypt voodoo inside
 
